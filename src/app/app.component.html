@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h2>Login Form</h2>
+    <form class="example-form">
+      
+      <div>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Enter Username" name="username" [(ngModel)]="uname" #name="ngModel">
+        </mat-form-field>
+      </div>
+      
+      <div>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Enter Password" name="password" [(ngModel)]="upass" #name="ngModel">
+        </mat-form-field>
+      </div>
+
+      <div>
+          <button mat-raised-button (click)="storeInfo(uname,upass);">SUBMIT</button>
+      </div>
+      
+    </form>
+</div>
+
